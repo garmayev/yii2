@@ -1,0 +1,5 @@
+a:2:{i:0;a:4:{s:4:"root";s:46:"/var/www/antarktida/frontend/web/css/site.less";s:8:"compiled";s:33:"* {
+  margin: 0;
+  padding: 0;
+}
+";s:5:"files";a:1:{s:46:"/var/www/antarktida/frontend/web/css/site.less";i:1537854017;}s:7:"updated";i:1537854356;}i:1;N;}
