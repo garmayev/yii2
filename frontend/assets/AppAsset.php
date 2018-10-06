@@ -12,21 +12,22 @@ class AppAsset extends AssetBundle
 	public $basePath = '@webroot';
 	public $baseUrl = '@web';
 	public $css = [
-		'css/site.less',
+		'css/site.css',
+		'css/antarktida.less',
 	];
 	public $js = [
 	];
 	public $depends = [
-		// 'yii\web\YiiAsset',
-		// 'yii\bootstrap\BootstrapAsset',
+		'yii\web\YiiAsset',
+		'yii\bootstrap\BootstrapAsset',
 	];
 
-	public function init()
+	/* public function init()
 	{
 		parent::init();
 		\Yii::$app->assetManager->bundles['yii\\bootstrap\\BootstrapAsset'] = [
 			'css' => [],
 			'js' => []
 		];
-	}
+	} */
 }

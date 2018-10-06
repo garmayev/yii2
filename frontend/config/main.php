@@ -10,9 +10,10 @@ return [
 	'id' => 'app-frontend',
 	'basePath' => dirname(__DIR__),
 	'bootstrap' => ['log'],
+	'language' => 'ru',
 	'controllerNamespace' => 'frontend\controllers',
 	'components' => [
-				'i18n' => [
+		'i18n' => [
 			'translations' => [
 				'app*' => [
 					'class' => 'yii\i18n\PhpMessageSource',
@@ -20,17 +21,6 @@ return [
 			],
 		],
 		'assetManager' => [
-			'bundles' => [
-				'yii\web\JqueryAsset' => [
-					'jsOptions' => ['position' => \yii\web\View::POS_HEAD]
-				],
-				'yii\bootstrap\BootstrapPluginAsset' => [
-					'js'=>[]
-				],
-				'yii\bootstrap\BootstrapAsset' => [
-					'css' => [],
-				],
-			],
 			'converter'=> [
 				'class'=> 'nizsheanez\assetConverter\Converter',
 				'force'=> false, // true : If you want convert your sass each time without time dependency
@@ -82,14 +72,15 @@ return [
 		'errorHandler' => [
 			'errorAction' => 'site/error',
 		],
-		/*
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false,
 			'rules' => [
+				'' => 'site/index',
+				'<action:\w+>' => 'site/<action>',
+				'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 			],
 		],
-		*/
 	],
 	'params' => $params,
 ];
