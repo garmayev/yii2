@@ -16,11 +16,16 @@ class AppAsset extends AssetBundle
 		'css/antarktida.less',
 	];
 	public $js = [
+		'//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
 	];
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 	];
+
+	public $jsOptions = ['position' => \yii\web\View::POS_HEAD];
+
+
 
 	/* public function init()
 	{

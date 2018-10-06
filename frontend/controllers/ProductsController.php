@@ -17,4 +17,23 @@ class ProductsController extends Controller
         	'data' => $dataProvider,
         ]);
 	}
+	
+	public function actionView($id) {
+        $dataProvider = new ActiveDataProvider([
+            'query' => Products::find()->where(['parent' => $id]),
+        ]);
+        return $this->render('view', [
+            'model' => $this->findModel($id),
+            'children' => $dataProvider,
+        ]);
+	}
+
+    protected function findModel($id)
+    {
+        if (($model = Products::findOne($id)) !== null) {
+            return $model;
+        }
+
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
+    }
 }

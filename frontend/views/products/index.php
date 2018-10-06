@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\data\ActiveDataProvider;
 
 use frontend\models\Products;
+$this->registerJSFile('/js/spoiler.js');
 $this->title = Yii::t('app', 'Products');
 
 $carouselItems = [
@@ -28,9 +29,12 @@ echo yii\bootstrap\Carousel::widget([
 		'<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'
 	]
 ]);
+
+// Сюда дополнительное меню
+
 $data = $data->getModels();
 foreach ($data as $item) {
-	echo Html::beginTag('div', ['class' => 'block']).Html::tag('div', $item->title, ['class' => 'spoiler']);
+	echo Html::beginTag('div', ['class' => 'block']).Html::tag('div', $item->title.Html::tag('span', '', ['class' => 'glyphicon glyphicon-chevron-down']), ['class' => 'spoiler active']);
 	echo Html::beginTag('div', ['class' => 'products-list container']);
 	$models = new ActiveDataProvider([
 		'query' => Products::find()->where(['cath' => $item->id, 'parent' => 0]),
@@ -41,7 +45,7 @@ foreach ($data as $item) {
 			'dataProvider' => $models,
 			'itemView' => '_post',
 			'itemOptions' => [
-				'class' => 'col-2',
+				'class' => 'item',
 			],
 			'layout' => '{items}',
 			'options' => [

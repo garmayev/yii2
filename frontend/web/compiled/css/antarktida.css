@@ -80,3 +80,87 @@ div.wrap .carousel.slide .lirpocad .carousel-caption img {
   float: none;
   padding: 10px;
 }
+div.wrap div.block div.spoiler {
+  height: 85px;
+  border-top: 1px solid #ccc;
+  line-height: 85px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+}
+div.wrap div.block div.spoiler span {
+  color: #000;
+  float: right;
+  height: 83px;
+  line-height: 83px;
+}
+div.wrap div.block div.spoiler span {
+  transition: transform 0.2s ease-in-out;
+}
+div.wrap div.block div.spoiler.active span {
+  transform: rotate(180deg);
+}
+div.wrap div.block div.products-list.container {
+  margin: 0 auto;
+  width: 100%;
+}
+div.wrap div.block div.products-list.container div.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+div.wrap div.block div.products-list.container div.row .item {
+  width: 190px;
+  text-align: center;
+  padding: 5px 0;
+}
+div.wrap div.block div.products-list.container div.row .item a {
+  cursor: pointer;
+}
+div.wrap div.item-view {
+  width: 80%;
+  margin: 0 auto;
+}
+div.wrap div.item-view div.item-mini {
+  display: block;
+  padding: 20px 0;
+}
+div.wrap div.item-view div.item-mini img.item-image,
+div.wrap div.item-view div.item-mini img.item-thumbs {
+  display: block;
+  float: left;
+  padding: 10px 50px;
+  width: 280px;
+}
+div.wrap div.item-view div.item-mini div.item-info {
+  padding: 10px 0;
+}
+div.wrap div.item-view div.item-price {
+  font-size: 2em;
+  font-weight: bold;
+}
+div.wrap div.item-view div.item-price span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div.wrap div.item-view div.item-description {
+  clear: both;
+  padding-bottom: 30px;
+}
+div.wrap div.item-view .item {
+  clear: both;
+}
+div.wrap div.item-view .item div.item-view-child img {
+  width: 180px;
+  float: left;
+  padding: 20px;
+}
+div.wrap div.item-view .item div.item-view-child .item-view-child-title {
+  font-size: 1.4em;
+  padding: 10px 0;
+}
+div.wrap div.item-view .item div.item-view-child .item-view-child-info {
+  padding: 10px 0;
+}
