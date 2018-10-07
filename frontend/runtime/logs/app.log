@@ -68157,3 +68157,57 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1538846814.682
     'REQUEST_TIME' => 1538846814
 ]
+2018-10-07 08:54:30 [192.168.195.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.195.1
+    in /var/www/antarktida/frontend/views/layouts/main.php:38
+    in /var/www/antarktida/frontend/controllers/ProductsController.php:18
+2018-10-07 08:54:30 [192.168.195.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.195.1
+2018-10-07 08:54:29 [192.168.195.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '66hh5s63ogfo93kq6q5673qaq1'
+    '_csrf-frontend' => 'fc4da6234cea2a2d9befbb1bb4c58886d22bf47c24d454aa2f5a43d30d606d11a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1tYTU0hiA_7LDkUIkxr-e3xjz82Fyteo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'antarktida.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=66hh5s63ogfo93kq6q5673qaq1; _csrf-frontend=fc4da6234cea2a2d9befbb1bb4c58886d22bf47c24d454aa2f5a43d30d606d11a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221tYTU0hiA_7LDkUIkxr-e3xjz82Fyteo%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at antarktida.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'antarktida.local'
+    'SERVER_ADDR' => '192.168.195.129'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.195.1'
+    'DOCUMENT_ROOT' => '/var/www/antarktida/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/antarktida/frontend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/antarktida/frontend/web/index.php'
+    'REMOTE_PORT' => '62691'
+    'REDIRECT_URL' => '/products/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/products/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1538902469.375
+    'REQUEST_TIME' => 1538902469
+]
